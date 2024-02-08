@@ -1,0 +1,270 @@
+
+body {
+   margin:0;padding:0;
+   text-decoration: none;
+   height:auto;
+   width:auto;
+   background-image: url('images/b.jpg');
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+   font-family:Sans-serif;
+}
+/* media screen android phone */
+@media (max-width:600px) {
+  header{
+  height:64px;
+  margin:0;
+  position: relatuv;
+  top:0;
+  display:flex;
+  background: ghostwhite ;
+  padding:0;
+}
+header div.logo{
+  background-color:none;
+  padding:10px;
+ display: flex;
+align-items: center;
+width: 32%;
+margin-left:15px;
+margin-top:5px;
+border:1px solid none;
+height: 25px;
+}
+header div.logo h1{
+  color:#F6005B;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin:0;
+  /*text-shadow: 1px 1px 2px white;*/
+}
+nav{
+  width: 360px;
+  height:80px;
+}
+ div.menus-links{
+  position:relative;
+  top:10px;
+}
+nav div.menus-links img{
+  position: absolute;
+  right:9px;
+  border:1px solid none ;
+}
+aside{
+  margin-top:100px;
+  
+}
+aside div.welcome{
+ margin-bottom:50px;
+ display: flex;
+ font-size:25px;
+ color:#F6005B;
+ justify-content: center;
+}
+aside div.welcome h2{
+  position: absolute;
+  top:3em;
+  text-align:center;
+  color:white;
+  font-size:35px;
+  /*text-shadow: 1px 1px 2px #CED2FF;*/
+}
+aside div.welcome h2 span{
+  font-size: 14px;
+  position: relative;
+  top:0;
+}
+aside div.inscription{
+  display:grid;
+  justify-content: center;
+  border:1px solid none;
+  margin-top:20px;
+}
+aside div.inscription div.sign {
+  margin-bottom: 25px;
+}
+div.inscription div.sign a button.sign-btn{
+  background:#F6005B;
+  border:none;
+  box-shadow: 5px 5px 15px black;
+  width:15.2em;
+  font-size:20px;
+  color:white;
+  height:2.2em;
+  border-radius: 25px;
+  font-weight: bolder;
+  text-align:center;
+}
+div.inscription div.sign button.sign-btn:hover{
+  background: #F6005B;
+  transition: 2s ease-out;
+  box-shadow: 5px 10px 15px #CED2FF;
+  border:2px solid none ;
+  width: 15.2em;
+  font-size: 20px;
+  color: white;
+  height: 2.2em;
+  border-radius: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+aside div.inscription div.login button.login-btn {
+  background: transparent;
+  border:2px solid white;
+  width:15.2em;
+  font-size:20px;
+  color:white;
+  height:2.2em;
+  border-radius: 25px;
+  font-weight: bolder;
+  text-align:center;
+}
+/*hover effect */
+aside div.inscription div.login button.login-btn:hover{
+  background: white;
+  box-shadow: 5px 5px 15px ghostwhite ;
+  border:2px solid #F6005B;
+  width:15.2em;
+  font-size:20px;
+  transition: 1s ease-in;
+  color:#F6005B;
+  height:2.2em;
+  border-radius: 25px;
+  font-weight: bolder;
+  text-align:center;
+}
+section{
+  border: 1px solid none ;
+  position: absolute;
+  width:100%;
+/*  color:#888CB9;*/
+  bottom:0px;
+  text-align: center;
+}
+section div.art p{
+font-size: 12px;
+color:white;
+font-family: serif;
+}
+div.nav-links{
+position: fixed;
+z-index: 1;
+border-top:0 solid #42445A;
+display:none;
+top:4em;
+left:0;
+background-color: ghostwhite;
+width: 100%;
+height:100%;
+}
+ div.nav-links ul{
+  width: 100%;
+  height:100%;
+  background: transparent ;
+ padding-left:16px;
+}
+div.nav-links ul li{
+  list-style-type: none;
+  margin-bottom: 25px;
+  padding:10px;
+  width:85%;
+  border:2px solid none;
+  background:#767995;
+}
+div.nav-links ul li a.pin{
+  color:white;
+  margin-left:5px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size:18px;
+}
+div.nav-links ul li a.link{
+  color:white;
+  margin-left:5px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size:18px;
+}
+div.nav-links ul  button.login-btn{
+  background: #F6005B;
+  border:none;
+  width:14em;
+  position: relative ;
+  left:1.4em;
+  top:1em;
+  font-size:20px;
+  color:white;
+  height:2.2em;
+  border-radius: 25px;
+  font-weight: bolder;
+  text-align:center;
+}
+div.nav-links ul button.login-btn:hover{
+  background: #F6005B;
+  border: none;
+  width: 14em;
+  position: relative;
+  left: 1.4em;
+  box-shadow: 5px 5px 15px black ;
+  transition: 1s;
+  top: 1em;
+  font-size: 20px;
+  color: white;
+  height: 2.2em;
+  border-radius: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+div.nav-links ul p{
+  color:#46474A;
+  display: flex;
+  text-align: center;
+  align-items: center ;
+  justify-content: center;
+  position:relative;
+  top:2em;
+  font-weight: 500;
+  font-family: serif;
+}
+div.nav-links ul p a{
+  text-decoration: none;
+color:#46474A;
+  cursor: none;
+}
+div.nav-links ul li a img.home{
+  position: absolute;
+  top:22px;
+  right: 20px;
+}
+div.nav-links ul li a img.info{
+  position: absolute;
+  top:87px;
+  right: 20px;
+}
+div.nav-links ul li a img.a{
+  position: absolute;
+  top:150px;
+  right: 20px;
+}
+}
+/*media pc screen */
+@media (max-width: 1080px){
+  header {
+    height: 64px;
+    margin: 0;
+    position: relatuv;
+    top: 0;
+    display: flex;
+    background: ghostwhite;
+    padding: 0;
+  }
+  ul {
+    display: flex;
+  }
+  div.menus-links img.menu{
+    display:none;
+  }
+}

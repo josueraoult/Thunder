@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>créer un compte</title>
+  <style>
+    body {
+      background: white;
+      margin: 0;
+      font-family: sans-serif;
+      padding: 0;
+    }
+
+    header {
+      background: white;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      height: 45px;
+      border-bottom: 1px solid rgba(109, 111, 120, 1);
+    }
+
+    header h3 {
+      position: relative;
+      top: 10px;
+      margin: 0;
+      font-weight:bold;
+    }
+
+    div.container {
+      text-align: center;
+      margin-top: 3em;
+    }
+
+    div.container p {
+      font-size: 15px;
+      font-weight:400;
+      color:rgba(120, 109, 115, 1);
+    }
+    input.submit{
+      background:#F6005B;
+      border:none;
+      /*  box-shadow: 5px 5px 15px #FF96BD;*/
+      width:92%;
+      font-size:20px;
+      font-family:sans-serif;
+      color:white;
+      margin-top:1.5em;
+      height:2.2em;
+      border-radius: 0px;
+      font-weight: bolder;
+      text-align:center;
+    }
+    form{
+      margin-top:1.8em;
+     height:10em;
+    }
+    ul{
+      padding:0;
+      position:relative;
+      left:1.4em;
+      width:20em;
+    }
+    li{
+      list-style: none;
+      padding-bottom:0.6em;
+      padding-top:0.6em;
+      border-bottom:1px solid #42445A;
+    }
+    label.femme{
+position:relative;
+font-weight: bold;
+right:7.5em;
+    }
+    label.personal{
+      position:relative;
+      font-weight: bold;
+      right:6.2em;
+    }
+    #peronal{
+      position: relative;
+      left:15em;
+    }
+    input#femme,#homme{
+     position:relative;
+     left:18em;
+    }
+   label.personal p{
+     margin:0  ;
+     position: relative;
+     left: 6.5em;
+   }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h3>Rejoignez Thunder⚡</h3>
+  </header>
+  <div class="container">
+    <h2>Quelle est votre genre ?</h2>
+    <p>Veuillez sélectionner votre genre.votre genre sera <br> affiché sur votre profil.</p>
+<form action=""method="POST">
+
+<ul>
+  <li>
+    <label for="femme"class="femme">Femme <input type="radio" name="femme" id="femme"></label>
+  </li>
+    <li>
+      <label for="homme" class="femme">Homme <input type="radio" name="homme" id="homme"></label>
+    </li>
+      <li>
+        <label for="" class="personal">Personnalisé <input type="radio" name="personal" id="peronal"><p>Sélectionner Personnalisé pour choisir un autre genre,ou si vous préférez ne rien indiquer.</p></label>
+      </li>
+</ul>
+ <input type="submit" value="suivant"class="submit">
+</form>
+  </div>
+
+</body>
+
+</html>

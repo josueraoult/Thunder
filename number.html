@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>créer un compte</title>
+  <style>
+    body {
+      background: white;
+      margin: 0;
+      font-family: sans-serif;
+      padding: 0;
+    }
+
+    header {
+      background: white;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      height: 45px;
+      border-bottom: 1px solid rgba(109, 111, 120, 1);
+    }
+
+    header h3 {
+      position: relative;
+      top: 10px;
+      margin: 0;
+      font-weight:bold;
+    }
+
+    div.container {
+      text-align: center;
+      margin-top: 3em;
+    }
+
+    div.container p {
+      font-size: 15px;
+      font-weight:400;
+      color:rgba(120, 109, 115, 1);
+    }
+    input.submit{
+      background:#F6005B;
+      border:none;
+      /*  box-shadow: 5px 5px 15px #FF96BD;*/
+      width:92%;
+      font-size:20px;
+      font-family:sans-serif;
+      color:white;
+      margin-top:1.5em;
+      height:2.2em;
+      border-radius: 0px;
+      font-weight: bolder;
+      text-align:center;
+    }
+    form input#number{
+      width:87%;
+      height:5vh;
+      outline-color:#F6005B;
+      border-radius:0;
+      border:1px solid rgba(129, 122, 126, 1);
+    }
+    form label{
+      position: relative;
+      right:6em;
+      font-weight:400;
+    }
+    form a{
+      color:#F6005B;
+     position: relative;
+     top:6em;
+      text-decoration:none;
+      font-weight: 500;
+      cursor:none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h3>Rejoignez Thunder⚡</h3>
+  </header>
+  <div class="container">
+    <h2>Entrer votre numéro de mobile </h2>
+    <p>Entrer le numéro de mobile auquel vous êtes <br>joignable. Ne vous enfaite pas car votre numéro <br>sera masqué sur votre profile.</p>
+<form action="date.html"method="POST">
+  <label for="">Numéro de mobile <br></label>
+  <input type="number" name="number" id="number"required>
+  <input type="submit" value="Suivant" class="submit">
+  <a href="email.html">S'inscrire par adresse email ✉️</a>
+</form>
+  </div>
+
+</body>
+<script>
+  const submitBtn = document.querySelector('.submit');
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault(); // Empêche le rechargement de la page
+
+  // Affichage de la page "load.html"
+  const loadPage = window.open('load.html', '_blank');
+
+  // Redirection vers la page "sex.html" après 2 secondes
+  setTimeout(() => {
+    loadPage.close(); // Fermeture de la page "load.html"
+    window.location.href = 'date.html'; // Redirection vers "sex.html"
+  }, 2000); // Durée de l'effet de chargement (en millisecondes)
+});
+
+</script>
+</html>
